@@ -4,7 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: linear-gradient(
+        135deg,
+        #f8f3eb 0%,
+        #f2ece2 50%,
+        #ede5d8 100%
+    );
+
+    min-height:100vh;
+    font-family: Georgia, serif;
+    color:#4a3f35;
+}
+
+/* Navbar */
+.navbar{
+    background-color: rgba(245,235,218,0.9) !important;
+    border-radius:15px;
+    margin-top:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#6b5c4a !important;
+}
+
+.nav-link{
+    color:#6b5c4a !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#c8a96e !important;
+}
+
+/* Hero */
+.hero{
+    text-align:center;
+    padding:80px 20px 50px;
+}
+
+.star-row{
+    color:#c8a96e;
+    font-size:14px;
+    letter-spacing:8px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    color:#4a3f35;
+    margin-bottom:15px;
+}
+
+.hero h1 em{
+    color:#7a6a5a;
+    font-style:italic;
+}
+
+.hero p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    color:#7a6a5a;
+}
+
+/* Section headings */
+h2{
+    color:#6b5c4a;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+/* Cards */
+.service-card{
+    background:rgba(245,235,218,0.85);
+    border:1px solid rgba(200,185,160,0.4);
+    border-radius:15px;
+    transition:all 0.3s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service-card h3,
+.service-card h4{
+    color:#6b5c4a;
+}
+
+.service-card p{
+    color:#8a7a68;
+    line-height:1.7;
+}
+
+/* Story section */
+.container p{
+    color:#7a6a5a;
+    line-height:1.9;
+}
+
+/* Why choose us */
+ul{
+    list-style:none;
+    padding-left:0;
+}
+
+ul li{
+    padding:10px 0;
+    color:#6b5c4a;
+    border-bottom:1px solid rgba(200,185,160,0.3);
+}
+
+/* Footer */
+footer{
+    margin-top:50px;
+    padding:20px;
+    text-align:center;
+    color:#7a6a5a;
+}
+
+/* Responsive */
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero{
+        padding:60px 15px;
+    }
+}
+
+</style>
 <body>
     <h2>About</h2>
      <p>Dedicated to helping pets find loving homes while providing quality veterinary care and trusted pet supplies.</p>
