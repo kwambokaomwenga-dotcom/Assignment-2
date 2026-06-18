@@ -12,6 +12,131 @@
 .navbar{
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background: linear-gradient(
+        135deg,
+        #f8f3eb 0%,
+        #f2ece2 50%,
+        #ede5d8 100%
+    );
+
+    min-height:100vh;
+    font-family: Georgia, serif;
+    color:#4a3f35;
+}
+
+/* Navbar */
+.navbar{
+    background-color: rgba(245,235,218,0.9) !important;
+    border-radius: 15px;
+    margin-top:15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#6b5c4a !important;
+}
+
+.nav-link{
+    color:#6b5c4a !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#c8a96e !important;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:90px 20px;
+}
+
+.star-row{
+    color:#c8a96e;
+    font-size:14px;
+    letter-spacing:8px;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:3.8rem;
+    font-weight:600;
+    line-height:1.2;
+    margin-bottom:15px;
+}
+
+.hero h1 em{
+    color:#7a6a5a;
+    font-style:italic;
+}
+
+.hero h3{
+    color:#8d755d;
+    margin-bottom:20px;
+    font-size:1.5rem;
+}
+
+.hero p{
+    max-width:700px;
+    margin:10px auto;
+    line-height:1.8;
+    color:#7a6a5a;
+}
+
+/* Buttons */
+.btn-primary{
+    background:#c8a96e;
+    border:none;
+}
+
+.btn-primary:hover{
+    background:#b89759;
+}
+
+.btn-outline-primary{
+    border-color:#c8a96e;
+    color:#c8a96e;
+}
+
+.btn-outline-primary:hover{
+    background:#c8a96e;
+    border-color:#c8a96e;
+}
+
+/* Services */
+h2{
+    color:#5c4d3d;
+    margin-bottom:30px;
+}
+
+.service-card{
+    background:rgba(245,235,218,0.8);
+    border:1px solid rgba(200,185,160,0.4);
+    border-radius:15px;
+    transition:all 0.3s ease;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service-card h4{
+    color:#6b5c4a;
+}
+
+.service-card p{
+    color:#8a7a68;
+}
 </style>
 </head>
 
