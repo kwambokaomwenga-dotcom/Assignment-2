@@ -52,7 +52,92 @@ body{
 .nav-link:hover{
     color:#c8a96e !important;
 }
+img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+/* FAQ Section */
 
+.faq{
+    padding:50px 20px;
+}
+
+.faq-sections{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-top:50px;
+}
+
+.faq-box{
+    flex:1;
+    min-width:300px;
+    max-width:380px;
+
+    background:rgba(245,235,218,0.85);
+    border:1px solid rgba(200,185,160,0.4);
+
+    border-radius:15px;
+    padding:25px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.faq-box:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.faq-box h3{
+    text-align:center;
+    color:#6b5c4a;
+    margin-bottom:20px;
+}
+
+.faq-box ul{
+    list-style:none;
+    padding:0;
+}
+
+.faq-box li{
+    padding:12px 0;
+    color:#7a6a5a;
+    border-bottom:1px solid rgba(200,185,160,0.3);
+    line-height:1.6;
+}
+
+.faq-box li:last-child{
+    border-bottom:none;
+}
+.question{
+    width:100%;
+    text-align:left;
+    padding:12px;
+    margin-top:10px;
+    background:#f8f3eb;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    color:#6b5c4a;
+}
+
+.question:hover{
+    background:#efe4d1;
+}
+
+.answer{
+    display:none;
+    padding:10px;
+    color:#7a6a5a;
+    line-height:1.6;
+}
+.question:active {
+    transform: scale(0.98);
+}
    </style>
 <body>
      <div class="container">
@@ -75,15 +160,16 @@ body{
          <li class="nav-item">
           <a class="nav-link" href="adoption.html">Adopt a Pet</a>
         </li>
-        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" ></a>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Service</a>
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" ></a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="vet.html">Vet Services</a></li>
             <li><a class="dropdown-item" href="shop.html">Pet Shop</a></li>
             <li><a class="dropdown-item" href="blog.html">Pet Care Tips</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="success.html">Success stories</a></li>
-             <li><a class="dropdown-item" href="faq.html">FAQs</a></li>
-                            
+             <li><a class="dropdown-item" href="faq.html">FAQs</a></li>                       
           </ul>
         </li>
      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -97,5 +183,77 @@ body{
   </nav>
  </div>
 
+ <p><img src="images/pic1.png" alt="pic1"></p>
+ 
+ <section class="faq">
+
+    <div class="hero">
+        
+        <h1>Frequently Asked Questions</h1>
+
+        <p>
+            New to pet adoption? Here are answers to the questions
+            most first-time pet parents ask.
+        </p>
+    </div>
+
+    <div class="faq-sections">
+
+        <div class="faq-box">
+            <h3> Adoption</h3>
+
+            <ul>
+                <li>What pets can I adopt?</li>
+                <li>What are the adoption requirements?</li>
+                <li>How much does adoption cost?</li>
+                <li>Can I return a pet?</li>
+            </ul>
+        </div>
+
+        <div class="faq-box">
+            <h3>Veterinary Care</h3>
+
+            <ul>
+                <li>Do you offer vaccinations?</li>
+                <li>How do I book an appointment?</li>
+                <li>Do you provide grooming services?</li>
+                <li>What are your operating hours?</li>
+            </ul>
+        </div>
+
+        <div class="faq-box">
+            <h3>Pet Shop</h3>
+
+            <ul>
+                <li>What food brands do you sell?</li>
+                <li>Do you sell toys and accessories?</li>
+                <li>Can I buy grooming products?</li>
+                <li>Do you offer delivery services?</li>
+            </ul>
+        </div>
+
+    </div>
+ <script>
+
+const questions = document.querySelectorAll(".question");
+
+questions.forEach(question => {
+
+    question.addEventListener("click", () => {
+
+        const answer = question.nextElementSibling;
+
+        if(answer.style.display === "block"){
+            answer.style.display = "none";
+        }
+        else{
+            answer.style.display = "block";
+        }
+
+    });
+
+});
+
+</script>
 </body>
 </html>
