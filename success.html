@@ -6,10 +6,18 @@
     <title>Success Stories</title>
 </head>
 <style>
-    .story-card{
-    background: rgba(245,235,218,0.85);
-    border-left: 6px solid #c8a96e;
-    }
+  body{
+    background: linear-gradient(
+        135deg,
+        #f8f3eb 0%,
+        #f2ece2 50%,
+        #ede5d8 100%
+    );
+    font-family: sans-serif; /* Added for cleaner look */
+            margin: 0;
+            padding: 20px;
+        }
+
     .footer{
     background: rgba(245,235,218,0.9);
     text-align:center;
@@ -45,11 +53,81 @@
     color:#8a7a68;
     font-size:14px;
 }
+.stories-container {
+            max-width: 900px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+.story{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    background: rgba(255, 255, 255, 0.5); /* Optional: gives a nice card background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.story img{
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius: 4px;
+}
+.story-text {
+            flex: 1; /* Allows text to take up the remaining space */
+        }
+
+        .story-text h2 {
+            margin-top: 0;
+            color: #6b5c4a;
+        }
+
+        .story-text p {
+            color: #555;
+            line-height: 1.6;
+        }
 </style>
 <body>
-    
+    <main class="stories-container">
+ <div class="story">
+    <img src="images/sokoke.jpg" alt="sokoke">
+    <div class="story-text">
+        <h2>Whiskers Story</h2>
+        <p>Whiskers was adopted by a caring family. Whiskers was found in darka alley malnutrioned after being birthed. She was taken in.She was treated and was better. She found a loving family.</p>
+    </div>
+
+</div>
+    <div class="story"> 
+        <img src="images/rottweiler.jpg" alt="rottweiler">
+        <div class="Story-text">
+        <h2>Max's Story</h2>
+        <p>Max was adopted by a caring family. He is a rottweiler breed.  </p>
+    </div>
+</div>
 
 
+</div>
+    <div class="story"> 
+        <img src="images/rabbit.jpeg" alt="rabbit">
+        <div class="Story-text">
+        <h2>Rue Story</h2>
+        <p>Rue was adopted by a caring family.   </p>
+    </div>
+</div>
+
+
+</div>
+    <div class="story"> 
+        <img src="images/bulbul.webp" alt="bulbul">
+        <div class="Story-text">
+        <h2>Well's Story</h2>
+        <p>Well was adopted by a caring family. He is a bulbul breed.  </p>
+    </div>
+</div>
+
+</main>
    <footer class="footer">
     <h4>Happy Tails</h4>
     <div class="footer-links">
