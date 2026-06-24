@@ -140,6 +140,7 @@ img {
 }
    </style>
 <body>
+
      <div class="container">
      <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container-fluid">
@@ -161,7 +162,6 @@ img {
           <a class="nav-link" href="adoption.html">Adopt a Pet</a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Service</a>
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" ></a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="vet.html">Vet Services</a></li>
@@ -201,38 +201,66 @@ img {
 
         <div class="faq-box">
             <h3> Adoption</h3>
-
-            <ul>
-                <li>What pets can I adopt?</li>
-                <li>What are the adoption requirements?</li>
-                <li>How much does adoption cost?</li>
-                <li>Can I return a pet?</li>
-            </ul>
-        </div>
-
+        <button class="question">What pets can I adopt?</button>
+ <div class="answer">
+  Dogs, cats, rabbits and birds are available for adoption.
+    </div>
+    <button class="question">What are the adoption requirements?</button>
+<div class="answer">
+You must be at least 18 years old and complete an adoption application.
+</div>
+  <button class="question">How much does adoption cost?</button>
+<div class="answer">
+Adoption fees vary depending on the pet and help cover healthcare expenses.
+</div>
+ 
+<button class="question">Can I return a pet?</button>
+<div class="answer">
+Yes. Contact us and we will help find the best solution.
+</div>
+</div>   
+                
         <div class="faq-box">
             <h3>Veterinary Care</h3>
+<button class="question">Do you offer vaccinations?</button>
+<div class="answer">
+Yes. We provide vaccinations for dogs, cats, rabbits and birds.
+</div>
+<button class="question">How do I book an appointment?</button>
+<div class="answer">
+Appointments can be booked online or through our contact page.
+</div>
+<button class="question">Do you provide grooming services?</button>
+<div class="answer">
+Yes. We offer bathing, nail trimming and grooming services.
+</div>
+<button class="question">What are your operating hours?</button>
+<div class="answer">
+We are open Monday to Saturday from 8:00 AM to 6:00 PM.
+</div>
 
-            <ul>
-                <li>Do you offer vaccinations?</li>
-                <li>How do I book an appointment?</li>
-                <li>Do you provide grooming services?</li>
-                <li>What are your operating hours?</li>
-            </ul>
-        </div>
-
+</div>
         <div class="faq-box">
             <h3>Pet Shop</h3>
-
-            <ul>
-                <li>What food brands do you sell?</li>
-                <li>Do you sell toys and accessories?</li>
-                <li>Can I buy grooming products?</li>
-                <li>Do you offer delivery services?</li>
-            </ul>
-        </div>
-
+<button class="question">What food brands do you sell?</button>
+<div class="answer">
+We stock premium dog food, cat food, rabbit pellets and bird feed.
+</div>
+ <button class="question">Do you sell toys and accessories?</button>
+<div class="answer">
+Yes. We sell toys, collars, leashes and pet beds.
+</div>
+ <button class="question">Can I buy grooming products?</button>
+<div class="answer">
+Yes. We offer shampoos, brushes and grooming essentials.
+</div>
+ <button class="question">Do you offer delivery services?</button>
+<div class="answer">
+Yes. Delivery is available within selected locations.
+</div>        
+</div>
     </div>
+    </section>
  <script>
 
 const questions = document.querySelectorAll(".question");
@@ -255,5 +283,6 @@ questions.forEach(question => {
 });
 
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
