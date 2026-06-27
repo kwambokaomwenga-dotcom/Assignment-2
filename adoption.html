@@ -77,6 +77,66 @@ body{
         .story-text p {
             line-height: 1.6;
         }
+        .filter-bar {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 25px 0 10px;
+    }
+    .filter-btn {
+        background: rgba(245,235,218,0.9);
+        border: 1px solid rgba(200,185,160,0.6);
+        border-radius: 25px;
+        padding: 8px 22px;
+        color: #6b5c4a;
+        font-family: Georgia, serif;
+        font-size: 0.9rem;
+        cursor: pointer;
+        transition: all 0.25s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+        background: #c8a96e;
+        color: #fff;
+        border-color: #c8a96e;
+    }
+    .pet-item.hidden { display: none !important; }
+ .btn-adopt {
+        display: inline-block;
+        margin-top: 12px;
+        background: #c8a96e;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 9px 22px;
+        font-family: Georgia, serif;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+    .btn-adopt:hover {
+        background: #b89356;
+        color: #fff;
+    }
+        .btn-adopt {
+        display: inline-block;
+        margin-top: 12px;
+        background: #c8a96e;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        padding: 8px 22px;
+        font-family: Georgia, serif;
+        font-size: 0.9rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: background 0.2s;
+    }
+    .btn-adopt:hover {
+        background: #b89356;
+        color: #fff;}
+
 </style>
 </head>
 <body>
@@ -113,158 +173,272 @@ body{
             </div>
         </nav>
     </div>
+ 
+    <div class="container pb-5">
+        <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">All Pets</button>
+            <button class="filter-btn" data-filter="dog">Dogs</button>
+            <button class="filter-btn" data-filter="cat">Cats</button>
+            <button class="filter-btn" data-filter="rabbit">Rabbits</button>
+            <button class="filter-btn" data-filter="bird">Birds</button>
+        </div>
 
-    <div class="story"> 
+ <div class="stories-container" id="pet-list">
+     <h3 class="section-heading" data-section="dog">Dogs</h3>
+    <div class="pet-item" data-type="dog">
+     <div class="story"> 
          <img src="images/bb.jpeg" alt="bb">
         <div class="story-text">
         <h2>Boerboel</h2>
         <p>If you want a dog breed that is protective of its human children and is an excellent guardian, this is what you need. Although it can be overprotective and aggressive, it is also great at socialisation, needs minimal grooming and does not suffer from constant health concerns. Its around Ksh.10,000 to 120,000 to buy one dog.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="dog">
 <div class="story">
     <img src = "images/bulldog.webp" alt="bulldog">
     <div class="story-text">
         <h2>Bulldog</h2>
-        <p>The Bulldog is another effective guard dog for your home. Its looks and temperament can deter unwanted visitors. Furthermore, bulldogs tend to be incredibly strong, especially if you have the English Bullldog.Its around Ksh 25,000 to Ksh 300,000</p>
+        <p>The Bulldog is another effective guard dog for your home. Its looks and temperament can deter unwanted visitors. Furthermore, bulldogs tend to be incredibly strong, especially if you have the English Bulldog.Its around Ksh 25,000 to Ksh 300,000</p>
+   <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="dog">
 <div class="story">
     <img src = "images/chiwawa.webp" alt="chiwawa">
     <div class="story-text">
         <h2>Chihuahua</h2>
         <p>Many buy it since its considered intelligent. As it learns a lot from its owner. You can teach it to obey your commands. You can buy a 1-3-month-old mixed breed Chihuahua as low as Ksh 8000. Purebreed go beyond Ksh 40,000.</p>
+     <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="dog">
 <div class="story">
     <img src = "images/gs.webp" alt="gs">
     <div class="story-text">
-        <h2>German Shepard</h2>
+        <h2>German Shepherd</h2>
         <p>Its a dangerous one for foes. Mostly used as working-class and police dogs but homeowners can benefit from its loyalty, intelligence and love if kept active. Its courageous and protective making it an excellent guard dog. Purebreed goes for Ksh 120,000.</p>
+     <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="dog">
 <div class="story">
     <img src = "images/mt.webp" alt="mt">
     <div class="story-text">
         <h2>Maltese Terrier</h2>
         <p>Its size makes it easier for you to pick it up and carry it around. Furthermore, it is a lively, funny, playful, and affectionate dog that loves warm and sunny weather. However, the Maltese Terrier tends to bark excessively if left alone for hours. You can buy it from Kenyan dog breeders for around Kshs 8,000.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="dog">
 <div class="story">
     <img src = "images/rottweiler.jpg" alt="rottweiler">
     <div class="story-text">
         <h2>Rottweiler</h2>
         <p>The Rottweiler is a large dog breed that is both loyal and lovable. It is the best dog for homeowners that can give it attention, affection, and lots of exercises. Furthermore, the dog needs a firm and dominant owner who is unafraid of taking on the challenges of having a large dog breed. The Rottweiler price in Kenya stars from Ksh 7,000 for a purebreed Ksh 120,000.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
-<div class="story">
+  <h3 class="section-heading" data-section="cat">Cats</h3>
+<div class="pet-item" data-type="cat">
+  <div class="story">
     <img src = "images/sokoke.jpg" alt="sokoke">
     <div class="story-text">
         <h2>Sokoke</h2>
         <p>	Sokoke Forest Cat, African Shorthair (standardised breed);
 khadzonzo or kadzonzo. Energetic and athletic. Its size is moderate weight around 2-4.5 kg lifespan 15 to 20 years. </p>
-    </div>
+ <a href="appointment.html" class="btn-adopt">Adopt Me</a>   
+</div>
+</div>
 </div>
 
+<div class="pet-item" data-type="cat">
 <div class="story">
     <img src = "images/bs.webp" alt = "bs">
     <div class = "story-text">
         <h2>British Shorthair</h2>
         <p>It has a stocky body, dense coat, and broad face and weighs between 7 and 17 pounds.British Shorthairs are good family pets because they are loyal, alert, and playful. Although they are not overly active, they are also not destructive.</p>
+     <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="cat">
 <div class="story">
     <img src = "images/mc.webp" alt = "mc">
     <div class = "story-text">
         <h2>Maine Coon</h2>
-        <p>aine Coon is the largest domesticated cat breed in the world. The exotic cat typically weighs between 9 and 18 pounds. Maine Coons have a thick, luxurious double-long hair coat and a robust and muscular body.They are also known to be exceptionally social, even with strangers and can remain playful into old age. Additionally, the cats are intelligent, affectionate, and gentle.</p>
+        <p>Maine Coon is the largest domesticated cat breed in the world. The exotic cat typically weighs between 9 and 18 pounds. Maine Coons have a thick, luxurious double-long hair coat and a robust and muscular body.They are also known to be exceptionally social, even with strangers and can remain playful into old age. Additionally, the cats are intelligent, affectionate, and gentle.</p>
+     <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="cat">
 <div class="story">
     <img src = "images/mk.webp" alt = "mk">
     <div class = "story-text">
         <h2>Munchkin</h2>
         <p>Munchkins are friendly and curious breeds with thick plush coats in various colours and patterns. Also, they are active cats that enjoy exploring, which makes them proficient hunters. The cats also like playing, including stealing small, shiny objects.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="cat">
 <div class="story">
     <img src = "images/ss.webp" alt = "ss">
     <div class = "story-text">
         <h2>Siamese</h2>
         <p>They have a unique pointed coat pattern, striking colour, and long, slim bodies. Siamese cats have vocal personalities and can form strong bonds with their owners. The cats are also active and require plenty of exercise and stimulation.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="cat">
 <div class="story">
     <img src = "images/t.webp" alt = "t">
     <div class = "story-text">
         <h2>Toyger</h2>
         <p>The Toyger is a medium-sized cat with a striped coat resembling a tiger. It is also an exotic cat breed with long, muscular bodies, round heads, and high shoulders. Toygers are well known for being intelligent. They are also active cats that love to play around and explore.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<h3 class="section-heading" data-section="rabbit">Rabbits</h3>
+<div class="pet-item" data-type="rabbit">
 <div class="story">
     <img src = "images/alaskan.webp" alt = "alaskan">
     <div class = "story-text">
         <h2>Alaskan</h2>
         <p>It comes from a breed called alaskan which originated from Germany. Its has a thick coat and 6 to 8.5 pounds.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="rabbit">
 <div class="story">
     <img src = "images/american.webp" alt = "american">
     <div class = "story-text">
         <h2>American</h2>
         <p>The American rabbit is a very rare breed. This large rabbit weighs about 12 pounds and comes in two solid colors (blue and white). The American is known for its sweet temperament and beautiful fur.Medium build, narrow head.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="rabbit">
 <div class="story">
     <img src = "images/wh.webp" alt = "wh">
     <div class = "story-text">
         <h2>White Hoot</h2>
         <p>The Blanc de Hotot (White Hotot) is a solid white rabbit with black “eyeliner” markings ringing its dark eyes.8 to 11 pounds.White with black eye ring.Well rounded body</p>
+  <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="rabbit">
 <div class="story">
     <img src = "images/db.webp" alt = "db">
     <div class = "story-text">
         <h2>Dutch Rabbit</h2>
         <p>The breed is small, ranging from 3.5 to 5.5 pounds.The Dutch rabbit is friendly and active, making it a popular pet.The front of the face, body, and the back feet are white; the rest is colored.White with black, blue, or brown; chocolate; steel; tortoise.</p>
+   <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<h3 class="section-heading" data-section="bird"> Birds</h3>
+<div class="pet-item" data-type="bird">
 <div class="story">
     <img src = "images/ck.webp" alt = "ck">
     <div class = "story-text">
         <h2>Cockatiel</h2>
         <p>The captivating cockatiel is another great choice for anyone who wants a friendly and affectionate pet bird.Cockatiels are good for beginners, and it’s best to keep them in pairs because they don’t like being alone.these birds make excellent pets when hand-fed as babies and raised in positive environments. They’re very emotional, and the crest on the top of their head reflects how they feel.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="bird">
 <div class="story">
     <img src = "images/dove.webp" alt = "dove">
     <div class = "story-text">
         <h2>Dove</h2>
         <p>You might not immediately think of a dove as a friendly pet bird, but domesticated, hand-fed doves are known to be extremely sweet and gentle. These birds rarely bite, and even people with limited bird experience generally find it easy to train and bond with doves. They enjoy their caretakers' companionship but usually won’t be overly demanding of attention. However, they do need a large cage and the ability to fly between perches because they don’t climb.</p>
+   <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
 
+<div class="pet-item" data-type="bird">
 <div class="story">
     <img src = "images/p.webp" alt = "p">
     <div class = "story-text">
-        <h2>Parrolet</h2>
+        <h2>Parrotlet</h2>
         <p>Easy to care for, parrotlets are known for having personalities much larger than their tiny bodies. Those considering parrotlets must have plenty of time to play and socialize with their pets, as these birds can become a little wild without regular handling. People who interact with their parrotlets every day are usually able to form strong bonds with these comical little birds.</p>
+    <a href="appointment.html" class="btn-adopt">Adopt Me</a>
     </div>
 </div>
+</div>
+<p id="no-results" style="display:none; text-align:center; color:#7a6a5a; padding:30px 0;">No pets found in that category.</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    var filterBtns = document.querySelectorAll('.filter-btn');
+    var petItems   = document.querySelectorAll('.pet-item');
+    var sections   = document.querySelectorAll('.section-heading');
+    var noResults  = document.getElementById('no-results');
+ 
+    filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+ 
+            // Update active button
+            filterBtns.forEach(function(b) { b.classList.remove('active'); });
+            btn.classList.add('active');
+ 
+            var filter  = btn.getAttribute('data-filter');
+            var visible = 0;
+ 
+            // Show or hide each pet card
+            petItems.forEach(function(item) {
+                if (filter === 'all' || item.getAttribute('data-type') === filter) {
+                    item.classList.remove('hidden');
+                    visible++;
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+ 
+            // Show or hide section headings
+            sections.forEach(function(sec) {
+                if (filter === 'all' || sec.getAttribute('data-section') === filter) {
+                    sec.style.display = 'block';
+                } else {
+                    sec.style.display = 'none';
+                }
+            });
+ 
+            // Show message if nothing visible
+            noResults.style.display = visible === 0 ? 'block' : 'none';
+        });
+    }); 
+</script>
 </body>
 </html>
