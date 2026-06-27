@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Success Stories</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <style>
   body{
@@ -88,8 +89,66 @@
             color: #555;
             line-height: 1.6;
         }
+        .navbar{
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.navbar{
+    background-color: rgba(245,235,218,0.9) !important;
+    border-radius: 15px;
+    margin-top:15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.navbar-brand{
+    font-size:1.6rem;
+    font-weight:bold;
+    color:#6b5c4a !important;
+}
+
+.nav-link{
+    color:#6b5c4a !important;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:#c8a96e !important;
+}
 </style>
 <body>
+
+<div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Happy Tails</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarFaq" aria-controls="navbarFaq" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarFaq">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="adoption.html">Adopt a Pet</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Services &amp; More</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="vet.html">Vet Services</a></li>
+                                 <li><a class="dropdown-item" href="blog.html">Pet Care tips</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="success.html">Success Stories</a></li>
+                                <li><a class="dropdown-item active" href="faq.html">FAQs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+
     <main class="stories-container">
  <div class="story">
     <img src="images/sokoke.jpg" alt="sokoke">
