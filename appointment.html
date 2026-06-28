@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
+
 <style>
     *{
     margin:0;
@@ -75,18 +75,19 @@ form{
     background:#b89356;
 }
 </style>
+</head>
 <body>
 <section class="appointment-section">
     <h2>Book an Appointment</h2>
     <form class="appointment-form">
 
         <div class="mb-3">
-            <label class="owner name" class="form-label">Owner Name</label>
+            <label class="ownerName" class="form-label">Owner Name</label>
             <input type="text" class="form-control" id="ownername" placeholder="Enter your name" recquired>
         </div>
 
         <div class="mb-3">
-            <label class="Pet Name" class="form-label">Pet Name</label>
+            <label class="petName" class="form-label">Pet Name</label>
             <input type="text" class="form-control" id ="Pet Name" placeholder="Enter pet name" recquired>
         </div>
 
@@ -113,6 +114,8 @@ form{
         <option>Animal Wellness Check</option>
         <option>Emergency Care</option>
     </select>
+</div>
+
     <div class="mb-3">
             <label class="Appointment Date" class="form-label">Appointment Date</label>
             <input type="date" class="form-control" id="Appointment Date">
@@ -126,5 +129,9 @@ form{
         <button type="submit" class="btn btn-success"> Book Appointment </button>
     </form>
 </section>
+<footer style="margin-top:40px; padding:20px; text-align:center; color:#7a6a5a;">
+    <p>&copy; 2026 Happy Tails. All Rights Reserved.</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

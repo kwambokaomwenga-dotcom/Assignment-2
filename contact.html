@@ -227,5 +227,24 @@
     <li><a href="contact.html">Contact</a></li>
 </nav>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+<script>
+function handlePost(type) {
+    var name    = document.getElementById('name').value.trim();
+    var email   = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+    var emailOK = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    var bar     = document.getElementById('statusBar');
+    if (!name || !email || !emailOK || !message) {
+        bar.textContent = 'Please fill in all fields with a valid email.';
+        bar.style.color = '#e34948';
+        return;
+    }
+    bar.textContent = type === 'draft' ? '✓ Saved as draft.' : '✓ Message sent!';
+    bar.style.color = '#1baf7a';
+}
+function clearStatus() {
+    document.getElementById('statusBar').textContent = '';
+}
+</script>
+    </body>
 </html>
